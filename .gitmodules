@@ -1,0 +1,6 @@
+[submodule "backend_repo"]
+	path = backend_repo
+	url = https://github.com/alfredo003/smartquote-backend
+[submodule "frontend_repo"]
+	path = frontend_repo
+	url = git@github.com:smartquote-rcs/SmartQuote-RCS-Front-End.git
