@@ -19,7 +19,7 @@ Este repositório contém **três componentes paralelos** que constituem o siste
 ### Credenciais de Acesso para Avaliação
 
 ```
-Email: teste@rcs.com
+Email: hudsonjrmateque@gmail.com
 Senha: Teste123@
 ```
 
