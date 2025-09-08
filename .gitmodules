@@ -10,3 +10,9 @@
 [submodule "smartQuote-python"]
 	path = smartQuote-python
 	url = git@github.com:smartquote-rcs/smartQuote-python.git
+[submodule "SmartQuote-RCS-Front-End"]
+	path = SmartQuote-RCS-Front-End
+	url = https://github.com/smartquote-rcs/SmartQuote-RCS-Front-End.git
+[submodule "smartquote-backend"]
+	path = smartquote-backend
+	url = https://github.com/smartquote-rcs/smartquote-backend.git
