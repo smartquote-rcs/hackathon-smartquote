@@ -4,3 +4,9 @@
 [submodule "frontend_repo"]
 	path = frontend_repo
 	url = git@github.com:smartquote-rcs/SmartQuote-RCS-Front-End.git
+[submodule "caminho/onde/ficara"]
+	path = caminho/onde/ficara
+	url = git@github.com:smartquote-rcs/smartQuote-python.git
+[submodule "smartQuote-python"]
+	path = smartQuote-python
+	url = git@github.com:smartquote-rcs/smartQuote-python.git
