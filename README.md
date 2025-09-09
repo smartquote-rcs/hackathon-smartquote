@@ -16,6 +16,18 @@
 
 Este repositório contém **três componentes paralelos** que constituem o sistema completo SmartQuote, uma solução inovadora de gestão de cotações desenvolvida para a RCS Angola. Cada componente está em seu próprio diretório e pode ser executado independentemente.
 
+## ⚠️ Observações Importantes para os Jurados
+
+<div style="background-color: #FFF3CD; padding: 15px; border-left: 5px solid #FFC107; margin-bottom: 20px; border-radius: 4px;">
+  <strong>Limitações dos Serviços Gratuitos:</strong>
+  
+  1. <strong>APIs de IA:</strong> Tanto a busca local (na base de dados) quanto a busca externa (web) dependem de tokens de serviços de IA (GROQ, OpenAI, etc). Como estamos utilizando planos gratuitos, podem ocorrer falhas temporárias se atingirmos o limite de requisições (rate limit) ou o limite de tokens disponíveis.
+  
+  2. <strong>Hospedagem:</strong> Os aplicativos estão hospedados no Render, um serviço gratuito que coloca as aplicações em "sleep mode" após períodos de inatividade. Se notar um tempo de carregamento inicial maior, isso é esperado - o serviço está "acordando" e reiniciando as aplicações.
+  
+  <strong>Solicitamos compreensão caso encontrem alguma destas limitações durante a avaliação.</strong>
+</div>
+
 ### Credenciais de Acesso para Avaliação
 
 ```
@@ -80,6 +92,25 @@ API Flask independente para processamento de interpretações e busca híbrida d
 
 [Saiba mais sobre a API Python](./smartQuote-python/README.md)
 
+## ⚠️ Fluxograma do Core da Aplicação
+
+<div align="center">
+  <img src="./fluxograma_execucao.png" alt="Fluxograma de Execução SmartQuote" width="800" />
+</div>
+
+O fluxograma acima ilustra o processo central do SmartQuote:
+
+1. **Pedido de Cotação** - O processo inicia com um pedido de cotação
+2. **Abrir Cotação** - Sistema cria um novo processo de cotação
+3. **Identificação dos Produtos/Serviços** - A IA analisa e identifica os produtos solicitados
+4. **Verificação na Base de Dados** - Sistema verifica se os produtos existem no banco de dados
+5. **Se Encontrados** - Os produtos são associados à cotação aberta
+6. **Se Não Encontrados** - Inicia-se busca na web usando firecrawl nos sites dos fornecedores
+7. **Produtos Encontrados** - São salvos na base de dados para uso futuro (cache)
+8. **Finalização** - Os produtos são relacionados à cotação aberta
+
+Este fluxo demonstra como o SmartQuote utiliza inteligência artificial para automatizar o processo de busca e comparação de produtos, otimizando o tempo e aumentando a precisão das cotações.
+
 ## 🚀 Início Rápido
 
 ### Configuração Completa
@@ -109,9 +140,8 @@ A **RCS** é uma empresa líder em soluções tecnológicas em Angola, oferecend
 
 ### 📞 Contato
 
-- **Website**: [https://smartquote-rcs-front-end.onrender.com/](https://smartquote-rcs-front-end.onrender.com/)
+- **Website**: [https://smartquote-rcs-front-end.onrender.com/](https://smartquote-rcs-front-end.onrender.com/) *(Nota: O primeiro acesso pode demorar até 30 segundos enquanto o serviço gratuito Render reinicia a aplicação)*
 
-### 📍 Localização
 
 
 <div align="center">
