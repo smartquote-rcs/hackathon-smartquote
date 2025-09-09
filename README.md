@@ -34,7 +34,9 @@ Este repositório contém **três componentes paralelos** que constituem o siste
 Email: hudsonjrmateque@gmail.com
 Senha: Teste123@
 ```
-
+```
+COTAÇÃO VIA EMAIL TESTE: smartquotercs@gmail.com
+```
 ## 🗂️ Estrutura do Repositório
 
 Este repositório contém três subrepositórios paralelos:
